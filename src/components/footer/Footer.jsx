@@ -87,7 +87,6 @@ const Footer = () => {
           </details>
         </div>
 
-
         <div className="lg:block">
           <ul className="hidden sm:flex flex-col gap-3">
             <li className="font-semibold">Категории</li>
