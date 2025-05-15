@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import MovieView from '@/components/movie-view/MovieView';
 import Skeleton from '@/components/skeleton/Skeleton';
 import './Movies.scss';
-import PaginationP from '@/components/pagination';
+import PaginationP from '../../components/pagination';
 
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
