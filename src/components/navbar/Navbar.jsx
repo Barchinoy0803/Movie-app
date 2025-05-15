@@ -25,23 +25,11 @@ const Navbar = () => {
                 </NavLink>
             </div>
 
-            <div className='hidden md:flex items-center gap-12 justify-center'>
-                <div className='flex flex-col items-center'>
-                    <img src={tvlogo} alt="TV" />
-                    <NavLink><span className='text-[12px]'>Home</span></NavLink>
-                </div>
-                <div className='flex flex-col items-center'>
-                    <img src={tabletlogo} alt="Tablet" />
-                    <NavLink><span className='text-[12px]'>Movies</span></NavLink>
-                </div>
-                <div className='flex flex-col items-center'>
-                    <img src={savedlogo} alt="Saved" />
-                    <NavLink><span className='text-[12px]'>Saved</span></NavLink>
-                </div>
-                <div className='flex flex-col items-center'>
-                    <img src={searchlogo} alt="Search" />
-                    <NavLink><span className='text-[12px]'>Search</span></NavLink>
-                </div>
+            <div className='hidden md:flex items-center gap-12 justify-center'>                
+                <NavLink className='flex flex-col items-center' to={'/'}><img src={tvlogo} alt="TV" /><span className='text-[12px]'>Home</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/movies'}><img src={tabletlogo} alt="TV" /><span className='text-[12px]'>Movies</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/saved'}><img src={savedlogo} alt="Tablet" /><span className='text-[12px]'>Saved</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/search'}><img src={searchlogo} alt="Search" /><span className='text-[12px]'>Search</span></NavLink>
             </div>
 
             <div className='hidden md:flex items-center gap-5'>

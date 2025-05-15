@@ -1,6 +1,7 @@
 import { Suspense } from "@/utils"
 import { lazy } from "react"
 import { useRoutes } from"react-router-dom"
+import MoveiDetails from "./movieDetails"
 
 const Layout = lazy(() => import("./layout/Layout"))
 const Home = lazy(() => import("./home/Home"))
@@ -21,6 +22,10 @@ const MainRoutes = () => {
                 {
                     path: "/movies",
                     element: <Suspense><Movies/></Suspense>
+                },
+                {
+                    path: "/movies/details",
+                    element: <Suspense><MoveiDetails /></Suspense>
                 },
                 {
                     path: "/saved",
