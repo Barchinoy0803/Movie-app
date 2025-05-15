@@ -6,6 +6,7 @@ import Skeleton from '@/components/skeleton/Skeleton';
 import './Movies.scss';
 import PaginationP from '../../components/pagination';
 
+
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialGenre = searchParams.get('genre') || '';
