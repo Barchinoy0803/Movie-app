@@ -3,7 +3,7 @@ import { useFetch } from '@/hooks/useFetch';
 import { useSearchParams } from 'react-router-dom';
 import MovieView from '@/components/movie-view/MovieView';
 import Skeleton from '@/components/skeleton/Skeleton';
-import Pagination from '@/components/Pagination';
+import PaginationP from '@/components/Pagination';
 import './Movies.scss';
 
 const Movies = () => {
@@ -93,7 +93,7 @@ const Movies = () => {
 
       {data?.total_pages > 1 && (
         <div className="flex justify-center mt-8">
-          <Pagination
+          <PaginationP
             currentPage={page}
             totalPages={data.total_pages}
             onPageChange={handlePageChange}

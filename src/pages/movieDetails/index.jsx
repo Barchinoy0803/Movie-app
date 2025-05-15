@@ -1,6 +1,6 @@
 import { useFetch } from "@/hooks/useFetch";
 import { useSearchParams } from "react-router-dom";
-import { FaGlobe, FaMoneyBillWave, FaClock, FaStar, FaTv } from "react-icons/fa";
+import { FaGlobe, FaMoneyBillWave, FaClock, FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

@@ -1,7 +1,7 @@
 import React from 'react';
 import Pagination from '@mui/material/Pagination';
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const PaginationP = ({ currentPage, totalPages, onPageChange }) => {
   const handleChange = (event, value) => {
     onPageChange(value);
   };
@@ -21,4 +21,4 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   );
 };
 
-export default Pagination;
+export default PaginationP;
